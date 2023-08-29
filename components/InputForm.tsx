@@ -90,7 +90,7 @@ export default function inputForm() {
     const { imageUrl } = values;
 
     // Your Clarifai API configuration
-    const PAT = "0e401cfcdede4fcaaf65b43e30a21ebf";
+    const PAT = process.env.NEXT_PUBLIC_PAT_TOKEN || process.env.PAT_TOKEN;
     const USER_ID = "clarifai";
     const APP_ID = "main";
     const MODEL_ID = "face-detection";
